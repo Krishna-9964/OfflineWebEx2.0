@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabs</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <section>
+      <div class="top-tabs-container">
+        <label for="main-tab-1">Searches</label>
+        <label for="main-tab-2">Downloads</label>
+      </div>
+
+      <!-- Tab Container 1 -->
+      <input
+        class="tab-radio"
+        id="main-tab-1"
+        name="main-group"
+        type="radio"
+        checked="checked"
+      />
+      <div class="tab-content">
+        <div class="sub-tabs-container">
+          <label for="sub-tab-1">Websites</label>
+          <label for="sub-tab-2">PDF</label>
+          <label for="sub-tab-3">Audios</label>
+          <label for="sub-tab-4">Videos</label>
+        </div>
+        <!-- Sub Tab -->
+        <input
+          class="tab-radio"
+          id="sub-tab-1"
+          name="sub-group"
+          type="radio"
+          checked="checked"
+        />
+        <div class="sub-tab-content">
+          <!-- <h1>Sub-Tab 1</h1> -->
+          <!-- <p>Sub-Tab content will go here! </p>
+          <ul>
+            <li>This is just a test</li>
+            <li>CSS only... so far</li>
+            <li>Barely any hackery</li>
+            <li>Kind of verbose, HTML-wise...</li>
+          </ul> -->
+          <table id="S-WebSearch">
+            <tr>
+              <th class="SearchName">Title</th>
+              <th class="LastVisit">Last Visit</th>
+              <th class="VisitCount">Visit Count</th>
+            </tr>
+            <!-- <tr>
+              <td class="SearchName">Title</td>
+              <td class="LastVisit">Last Visit</td>
+              <td class="VisitCount">Visit Count</td>
+            </tr> -->
+          </table>
+        </div>
+        <!-- Sub Tab -->
+        <input class="tab-radio" id="sub-tab-2" name="sub-group" type="radio" />
+        <div class="sub-tab-content">
+          <h1>Sub-Tab 2</h1>
+          <!-- <p>Sub-Tab content will go here!</p>
+          <ul>
+            <li>Another list</li>
+            <li>With some items</li>
+            <li>Make it short</li>
+            <li>And sweet</li>
+          </ul> -->
+
+          <table id="S-PDF">
+            <tr>
+              <th class="SearchName">Title</th>
+              <th class="LastVisit">Last Visit</th>
+              <th class="VisitCount">Visit Count</th>
+            </tr>
+          </table>
+        </div>
+        <!-- Sub Tab -->
+        <input class="tab-radio" id="sub-tab-3" name="sub-group" type="radio" />
+        <div class="sub-tab-content">
+          <h1>Sub-Tab 3</h1>
+          <!-- <p>Sub-Tab content will go here!</p>
+                  <ul>
+                    <li>Another list</li>
+                    <li>With some items</li>
+                    <li>Make it short</li>
+                    <li>And sweet</li>
+                  </ul> -->
+          <table id="S-Audios">
+            <tr>
+              <th class="SearchName">Title</th>
+              <th class="LastVisit">Last Visit</th>
+              <th class="VisitCount">Visit Count</th>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Sub Tab -->
+        <input class="tab-radio" id="sub-tab-4" name="sub-group" type="radio" />
+        <div class="sub-tab-content">
+          <h1>Sub-Tab 4</h1>
+          <!-- <p>Sub-Tab content will go here!</p>
+                  <ul>
+                    <li>Another list</li>
+                    <li>With some items</li>
+                    <li>Make it short</li>
+                    <li>And sweet</li>
+                  </ul> -->
+          <table id="S-Videos">
+            <tr>
+              <th class="SearchName">Title</th>
+              <th class="LastVisit">Last Visit</th>
+              <th class="VisitCount">Visit Count</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- Tab Container 2 -->
+      <input class="tab-radio" id="main-tab-2" name="main-group" type="radio" />
+      <div class="tab-content">
+        <div class="sub-tabs-container">
+          <!-- NOTE: due to id note below, remember to match the for.
+        The actual title doesn't matter, just to show it works... -->
+          <label for="sub-tab2-1">Websites</label>
+          <label for="sub-tab2-2">PDF</label>
+          <label for="sub-tab2-3">Audios</label>
+          <label for="sub-tab2-4">Videos</label>
+        </div>
+        <!-- Sub Tab -->
+        <!-- NOTE: name="sub-group" will require to be unique to the tab, 
+              ie: tab2 = sub-group2, tab3 = sub-group 3 etc. -->
+        <!-- NOTE: id have to be unique. So for each sub tabs, the input id will have to change -->
+        <input
+          class="tab-radio"
+          id="sub-tab2-1"
+          name="sub-group2"
+          type="radio"
+          checked="checked"
+        />
+        <div class="sub-tab-content">
+          <h1>Sub-Tab 5</h1>
+          <!--<p>Sub-Tab content will go here! </p>
+          <ul>
+            <li>No JavaScript</li>
+            <li>100% Healthy, Plain CSS</li>
+            <li>Barely any hackery</li>
+            <li>Kind of verbose, HTML-wise..</li>
+          </ul> -->
+          <table id="WebSearch">
+            <tr>
+              <th class="SearchName">File Name</th>
+              <th class="LastVisit">Start Time</th>
+              <th class="VisitCount">End Time</th>
+            </tr>
+            <tr>
+              <td class="FileName">abc</td>
+              <td class="StartTime">2154</td>
+              <td class="EndTime">54654</td>
+            </tr>
+          </table>
+        </div>
+        <!-- Sub Tab -->
+        <input
+          class="tab-radio"
+          id="sub-tab2-2"
+          name="sub-group2"
+          type="radio"
+        />
+        <div class="sub-tab-content">
+          <h1>Sub-Tab 6</h1>
+          <!-- <p>Different Content goes here</p>
+          <ul>
+            <li>Another list</li>
+            <li>With some items</li>
+            <li>Make it short</li>
+            <li>And sweet</li>
+          </ul> -->
+          <table id="PDF">
+            <tr>
+              <th class="SearchName">File Name</th>
+              <th class="LastVisit">Start Time</th>
+              <th class="VisitCount">End Time</th>
+            </tr>
+            <tr>
+              <td class="FileName">abc</td>
+              <td class="StartTime">2154</td>
+              <td class="EndTime">54654</td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Sub Tab -->
+        <input
+          class="tab-radio"
+          id="sub-tab2-3"
+          name="sub-group2"
+          type="radio"
+        />
+        <div class="sub-tab-content">
+          <h1>Sub-Tab 7</h1>
+          <!-- <p>Different Content goes here</p>
+                  <ul>
+                    <li>Another list</li>
+                    <li>With some items</li>
+                    <li>Make it short</li>
+                    <li>And sweet</li>
+                  </ul> -->
+          <table id="Audios">
+            <tr>
+              <th class="SearchName">File Name</th>
+              <th class="LastVisit">Start Time</th>
+              <th class="VisitCount">End Time</th>
+            </tr>
+            <tr>
+              <td class="FileName">abc</td>
+              <td class="StartTime">2154</td>
+              <td class="EndTime">54654</td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Sub Tab -->
+        <input
+          class="tab-radio"
+          id="sub-tab2-4"
+          name="sub-group2"
+          type="radio"
+        />
+        <div class="sub-tab-content">
+          <h1>Sub-Tab 8</h1>
+          <!-- <p>Different Content goes here</p>
+              <ul>
+                <li>Another list</li>
+                <li>With some items</li>
+                <li>Make it short</li>
+                <li>And sweet</li>
+              </ul> -->
+          <table id="Videos">
+            <tr>
+              <th class="SearchName">File Name</th>
+              <th class="LastVisit">Start Time</th>
+              <th class="VisitCount">End Time</th>
+            </tr>
+            <tr>
+              <td class="FileName"></td>
+              <td class="StartTime">2154</td>
+              <td class="EndTime">54654</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!--Script-->
+    <script src="index.js"></script>
+  </body>
+</html>

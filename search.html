@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="search.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Searches</h1>
+<div class="tabs">
+  
+  <input type="radio" id="tab1" name="tab-control" checked>
+  <input type="radio" id="tab2" name="tab-control">
+  <input type="radio" id="tab3" name="tab-control">  
+  <input type="radio" id="tab4" name="tab-control">
+  <ul>
+    <li title="Features"><label for="tab1" role="button"><span>Websites</span></label></li>
+    <li title="Delivery Contents"><label for="tab2" role="button"><span>Documents</span></label></li>
+    <li title="Shipping"><label for="tab3" role="button"><span>Zips</span></label></li>
+    <li title="Returns"><label for="tab4" role="button"><span>Video</span></label></li> 
+  </ul>
+  
+  <div class="slider"><div class="indicator"></div></div>
+  <div class="content">
+    <section>
+      <h2>Features</h2>
+      <ul id="list">
+        <li><a href="#">Link</a></li>
+      </ul>
+        <section>
+          <h2>Delivery Contents</h2>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quas adipisci a accusantium eius ut voluptatibus ad impedit nulla, ipsa qui. Quasi temporibus eos commodi aliquid impedit amet, similique nulla.</section>
+        <section>
+          <h2>Shipping</h2>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nemo ducimus eius, magnam error quisquam sunt voluptate labore, excepturi numquam! Alias libero optio sed harum debitis! Veniam, quia in eum.</section>
+    <section>
+          <h2>Returns</h2>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dicta vero rerum? Eaque repudiandae architecto libero reprehenderit aliquam magnam ratione quidem? Nobis doloribus molestiae enim deserunt necessitatibus eaque quidem incidunt.</section>
+  </div>
+</div>
+<script>
+  let ul = document.getElementById('list');
+  let link = document.createElement('li');
+  let a = document.createElement('a');
+    a.href="#";
+    a.textContent="Link"
+    link.appendChild(a)
+    ul.appendChild(link)  
+</script>
+</body>
+</html>
