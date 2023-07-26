@@ -43,7 +43,6 @@ input.addEventListener('keydown', function (event) {
             listItem.appendChild(h);
             top_matched.appendChild(listItem);
         });
-
         console.log(input.value);
     }
 });
