@@ -15,6 +15,12 @@ search.addEventListener('click', function () {
     window.open("./search box/index.html", '_blank')
 })
 
+// h = document.getElementById('History');
+// h.addEventListener('click', function () {
+//     window.open("index.html", '_blank')
+//     // console.log("Hello")
+// })
+
 
 //Download content
 document.addEventListener("DOMContentLoaded", function () {

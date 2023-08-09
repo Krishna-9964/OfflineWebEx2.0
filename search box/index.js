@@ -1,6 +1,6 @@
 
 var items = []
-chrome.downloads.search({ limit: 300 }, function (results) {
+chrome.downloads.search({ limit: 3000 }, function (results) {
     // console.log(results)
     results.forEach(function (result) {
         var str = result.filename;
@@ -43,6 +43,13 @@ input.addEventListener('keydown', function (event) {
             listItem.appendChild(h);
             top_matched.appendChild(listItem);
         });
+        if (matchingResults.length == 0) {
+            var listItem = document.createElement('li');
+            var h = document.createElement('h5');
+            h.innerText = "No results found";
+            listItem.appendChild(h);
+            top_matched.appendChild(listItem);
+        }
         console.log(input.value);
     }
 });
