@@ -13,9 +13,13 @@ const otherExtensions = [".jpg", ".jpeg", ".png", ".gif", ".bmp", ".svg", ".tiff
 
 
 
+// const searchHistory = document.querySelector('#searchHistory');
+// searchHistory.addEventListener('click', () => {
+//     //hide the div element with id downloadsContent
+//     document.getElementById('downloadsContent').style.display = 'none';
+// });
 
-
-
+// document.getElementById('downloadsContent').style.display = 'none';
 var btn = document.querySelector("#search")
 
 btn.addEventListener('click', printHistory);
@@ -76,6 +80,7 @@ function getHistory(from_date, to_date) {
         results.sort(function (a, b) {
             return b.lastVisitTime - a.lastVisitTime;
         });
+        console.log(results)
         appendHistoryItems(results);
         categorizeHistory(results);
         deleteHistory();
@@ -155,11 +160,11 @@ function filterHistory(results) {
             vid_li += '<li class="list-group-item"><a href=' + result.url + '>' + result.title + '</a><p>' + date_mod + '</p><input type="button" class="btn btn-outline-danger delete" value="Delete"></li>'
 
         }
-        else if (videoExtensions.includes(extension)) {
+        else if (audioExtensions.includes(extension)) {
             aud_li += '<li class="list-group-item"><a href=' + result.url + '>' + result.title + '</a><p>' + date_mod + '</p><input type="button" class="btn btn-outline-danger delete" value="Delete"></li>'
 
         }
-        else if (videoExtensions.includes(extension)) {
+        else if (fileExtensions.includes(extension)) {
             file_li += '<li class="list-group-item"><a href=' + result.url + '>' + result.title + '</a><p>' + date_mod + '</p><input type="button" class="btn btn-outline-danger delete" value="Delete"></li>'
 
         }

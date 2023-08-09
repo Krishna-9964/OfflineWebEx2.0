@@ -26,54 +26,11 @@ document.addEventListener('DOMContentLoaded', function () {
   //   });
   // }); 
 
-  const videoExtensions = [
-    ".mp4",
-    ".mov",
-    ".avi",
-    ".mkv",
-    ".wmv",
-    ".flv",
-    ".webm",
-    ".mpeg",
-    ".mpg",
-    ".m4v",
-    ".3gp",
-    ".f4v",
-    ".swf",
-    ".rm",
-    ".rmvb",
-    ".ogv",
-    ".vob",
-    ".mts",
-    ".m2ts",
-    ".ts",
-    ".divx",
-    ".asf",
-  ];
+  const audioExtensions = [".mp3", ".wav", ".ogg", ".aac", ".flac", ".wma", ".m4a", ".opus", ".aiff", ".alac"];
 
-  const audioExtensions = [
-    ".mp3",
-    ".wav",
-    ".ogg",
-    ".aac",
-    ".flac",
-    ".wma",
-    ".m4a",
-    ".opus",
-    ".aiff",
-    ".alac",
-    ".ape",
-    ".mid",
-    ".midi",
-    ".amr",
-    ".mp2",
-    ".ac3",
-    ".ra",
-    ".pcm",
-    ".au",
-    ".raw",
-    ".mka",
-  ];
+  const videoExtensions = [".mp4", ".mov", ".avi", ".mkv", ".wmv", ".flv", ".webm", ".mpeg", ".mpg", ".m4v", ".3gp"];
+
+  const fileExtensions = [".zip", ".rar", ".tar", ".gz", ".7z", ".exe", ".dmg", ".apk", ".msi", ".html", ".css", ".js", ".ttf", ".otf", ".woff", ".woff2", ".sqlite", ".db", ".json", ".xml", ".epub", ".torrent", ".bak", ".log", ".iso", ".ics", ".jar"];
 
 
 
@@ -155,6 +112,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const pTable = document.getElementById('PDF');
   const aTable = document.getElementById('Audios');
   const vTable = document.getElementById('Videos');
+  const fTable = document.getElementById('Files');
+  const oTable = document.getElementById('Others');
 
   chrome.downloads.search({ limit: 300 }, function (results) {
     results.forEach(function (result) {
@@ -198,6 +157,7 @@ document.addEventListener('DOMContentLoaded', function () {
       else if (audioExtensions.includes(result.filename)) {
         aTable.appendChild(dRow);
       }
+
       else {
         dTable.appendChild(dRow);
       }

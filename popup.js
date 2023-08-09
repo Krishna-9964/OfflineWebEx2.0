@@ -1,7 +1,7 @@
 
 button = document.getElementById('openNewTabButton');
 button.addEventListener('click', function () {
-    window.open("index.html", '_blank')
+    window.open("downloads.html", '_blank')
 
 })
 filter = document.getElementById('FilterHistory');
